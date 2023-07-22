@@ -647,9 +647,11 @@ section {
   header {
     padding: 0 !important;
   }
+  /*
   .section {
     padding: 7rem 11rem;
   }
+  */
   .contact-content-con {
     flex-direction: column;
   }
