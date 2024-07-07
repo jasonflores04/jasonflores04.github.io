@@ -182,71 +182,36 @@ section {
   text-transform: uppercase;
 }
 
-.about-stats {
+
+.about-stats-container {
+  display: flex;
+  justify-content: space-between;
   padding-bottom: 4rem;
 }
-.about-stats .progress-bars {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
+.about-stats-left .about-stats-right {
+  flex: 1;
+  text-align: center;
 }
-.about-stats .progress-bars .progress-bar {
-  display: flex;
-  flex-direction: column;
+.about-stats-left {
+  margin-right: 25rem;
 }
-.about-stats .progress-bars .progress-bar .prog-title {
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.about-stats .progress-bars .progress-bar .progress-con {
-  display: flex;
-  align-items: center;
-}
-.about-stats .progress-bars .progress-bar .progress-con .prog-text {
-  color: var(--color-grey-1);
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress {
+.about-stats-right .image {
   width: 100%;
-  height: 0.45rem;
-  background-color: var(--color-grey-2);
-  margin-left: 1rem;
-  position: relative;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress span {
-  position: absolute;
-  top: 0;
-  left: 0;
   height: 100%;
-  background-color: var(--color-secundary);
-  transition: all 0.4s ease-in-out;
+  padding-bottom: 4rem;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .python {
-  width: 90%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .c {
-  width: 90%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .html {
-  width: 85%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .css {
-  width: 65%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .javascript {
-  width: 50%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .ocaml {
-  width: 25%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .rust {
-  width: 25%;
+.about-stats-right .image img {
+  width: 75%;
+  height: auto;
+  object-fit: cover;
 }
 
 .stat-title {
   text-transform: uppercase;
   font-size: 1.4rem;
   text-align: center;
-  padding: 3.5rem 0;
+  padding-bottom: 3rem;
+  padding-top: 1rem;
   position: relative;
 }
 .stat-title::before {
@@ -259,6 +224,7 @@ section {
   background-color: var(--color-grey-2);
   transform: translateX(-50%);
 }
+
 
 .timeline {
   display: grid;
@@ -323,6 +289,7 @@ section {
 }
 .portfolios .portfolio-item {
   position: relative;
+  text-align: center;
 }
 .portfolios .portfolio-item img {
   width: 100%;
